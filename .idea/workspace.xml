@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/HTML_2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/prev.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/01.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/02.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/03.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/04.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/05.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/06.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="Add slider">
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +41,16 @@
       <option name="presentableId" value="Default" />
       <updated>1647664985764</updated>
       <workItem from="1647664988921" duration="150000" />
-      <workItem from="1647665178043" duration="2349000" />
+      <workItem from="1647665178043" duration="2673000" />
     </task>
+    <task id="LOCAL-00001" summary="Add slider">
+      <created>1647667703629</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647667703629</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +66,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add slider" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add slider" />
   </component>
 </project>
