@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="Fix aligin">
-      <change afterPath="$PROJECT_DIR$/js/combobox.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/swipper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/HTML_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HTML_2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="Minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -52,7 +48,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647664985764</updated>
       <workItem from="1647664988921" duration="150000" />
-      <workItem from="1647665178043" duration="4548000" />
+      <workItem from="1647665178043" duration="6152000" />
     </task>
     <task id="LOCAL-00001" summary="Add slider">
       <created>1647667703629</created>
@@ -68,7 +64,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647668032197</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Minor changes">
+      <created>1647669856051</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1647669856051</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -88,6 +91,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add slider" />
     <MESSAGE value="Fix aligin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix aligin" />
+    <MESSAGE value="Minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes" />
   </component>
 </project>
