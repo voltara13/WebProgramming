@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 2</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+<div class="swiper">
+    <!-- Additional required wrapper -->
+    <h2 class="name">Задание 2</h2>
+    <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <img src="img/01.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/02.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/03.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/04.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/05.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+            <img src="img/06.jpg" alt="">
+        </div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+</div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    new Swiper('.swiper', {
+        // Optional parameters
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+</script>
+</body>
+</html>
