@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="Add slider">
-      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+    <list default="true" id="610663c8-0245-4929-99bd-0cf667f90376" name="Changes" comment="Fix aligin">
+      <change afterPath="$PROJECT_DIR$/js/combobox.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/swipper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/HTML_2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/HTML_2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -29,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -41,7 +52,7 @@
       <option name="presentableId" value="Default" />
       <updated>1647664985764</updated>
       <workItem from="1647664988921" duration="150000" />
-      <workItem from="1647665178043" duration="2673000" />
+      <workItem from="1647665178043" duration="4548000" />
     </task>
     <task id="LOCAL-00001" summary="Add slider">
       <created>1647667703629</created>
@@ -50,7 +61,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647667703629</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix aligin">
+      <created>1647668032197</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647668032197</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,6 +87,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add slider" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add slider" />
+    <MESSAGE value="Fix aligin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix aligin" />
   </component>
 </project>
