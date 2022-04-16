@@ -1,6 +1,7 @@
-const buttonCalculateSelector = $('#calculate-button')
+export const buttonCalculateSelector = $('#calculate-button')
+export const depositTypeSelector = $('#deposit-type')
+
 const textResultSelector = $('#text-result')
-const depositTypeSelector = $('#deposit-type')
 const depositTermSelector = $('#deposit-term')
 const depositAmountSelector = $('#deposit-amount')
 
@@ -21,7 +22,7 @@ const variants = [
     ]
 ]
 
-function calculate() {
+export function calculate() {
     const depositAmount = parseFloat(depositAmountSelector.val())
     if (depositAmount > 0) {
         const percent = depositTermSelector.val() / 100
@@ -38,7 +39,7 @@ function calculate() {
     }
 }
 
-function onChangeDepositTerm() {
+export function onChangeDepositTerm() {
     const chosen = depositTypeSelector.val()
     const list = variants[chosen]
 
@@ -47,14 +48,3 @@ function onChangeDepositTerm() {
     for (let i = 0; i < list.length; i++){
         depositTermSelector.append('<option value=' + list[i].percent + '>' + list[i].text + '</option>>') }
 }
-
-buttonCalculateSelector.click(function () {
-    calculate()
-})
-
-depositTypeSelector.change(function () {
-    onChangeDepositTerm()})
-
-$(document).ready(function () {
-    onChangeDepositTerm()
-})

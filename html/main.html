@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 2</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+</head>
+<body>
+<div class="main">
+    <h2>Задание 2</h2>
+    <div class="ex2">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../img/01.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/02.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/03.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/04.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/05.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../img/06.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <h2>Задание 3</h2>
+    <div class="ex3">
+        <label for="deposit-type"></label><select class="combobox" id="deposit-type">
+        <option value="0">Пополняемый</option>
+        <option value="1">Срочный</option>
+    </select>
+        <label for="deposit-term"></label><select class="combobox" id="deposit-term">
+    </select>
+        <label for="deposit-amount"></label><input class="text-input" type="number" placeholder="Сумма вклада"
+                                                   id="deposit-amount">
+        <button class="button" id="calculate-button">Рассчитать</button>
+        <div class="text-block">
+            <p id="text-result">Выберите вид, срок и сумму вклада для расчета</p>
+        </div>
+    </div>
+    <h2>Поиск вакансий</h2>
+    <div class="ex4">
+        <label for="job-title"></label><input class="text-input" type="text" placeholder="Название вакансии"
+                                                   id="job-title">
+    </div>
+</div>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-new Swiper('.swiper', {
+export default new Swiper('.swiper', {
     loop: true,
 
     navigation: {
