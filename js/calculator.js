@@ -1,7 +1,9 @@
+import $ from 'jquery';
+
 export const buttonCalculateSelector = $('#calculate-button')
 export const depositTypeSelector = $('#deposit-type')
 
-const textResultSelector = $('#text-result')
+const calculateResultSelector = $('#calculate-result')
 const depositTermSelector = $('#deposit-term')
 const depositAmountSelector = $('#deposit-amount')
 
@@ -27,7 +29,7 @@ export function calculate() {
     if (depositAmount > 0) {
         const percent = depositTermSelector.val() / 100
         const depositResult = Math.round((depositAmount + depositAmount * percent) * 100) / 100
-        textResultSelector.html(
+        calculateResultSelector.html(
             `Вид вклада: ${depositTypeSelector.find('option:selected').text()}<br>
             Срок и годовая ставка: ${depositTermSelector.find('option:selected').text()}<br>
             Сумма вклада в начале срока: ${depositAmount} руб.<br>
@@ -35,7 +37,7 @@ export function calculate() {
         )
     }
     else {
-        textResultSelector.text('Введите верное значение')
+        calculateResultSelector.text('Введите верное значение')
     }
 }
 

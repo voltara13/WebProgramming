@@ -1,4 +1,5 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -19,5 +20,11 @@ module.exports = {
                 loader: "html-loader",
             },
         ],
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+        title: 'webpack Boilerplate',
+        template: './html/index.html',
+        filename: 'index.html'
+    })]
 }
