@@ -9,14 +9,19 @@ const vacancyResultSelector = $('#vacancy-result')
 
 export const loadVacancies = () => {
     vacancyResultSelector.empty()
-    api.getVacancy(vacancyIdSelector.val(), vacancyAmountSelector.val()).then(data => {
-        data.items.map(item => {
-            if (item.salary)
-                vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name} зарплата: ${item.salary.from} ${item.salary.currency}</a></p>`)
-            else
-                vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name}</a></p>`)
-        });
-    })
+
+    api.getVacancy(vacancyIdSelector.val(), vacancyAmountSelector.val())
+        .then(response => {
+            response.items.map(item => {
+                if (item.salary)
+                    vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name} зарплата: ${item.salary.from} ${item.salary.currency}</a></p>`)
+                else
+                    vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name}</a></p>`)
+            });
+        })
+        .catch(() => {
+            vacancyResultSelector.append('<p>Ничего не найдено, введите корректные данные.</p>')
+        })
 }
 
 const instance = axios.create({

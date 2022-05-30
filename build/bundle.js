@@ -100,14 +100,19 @@ const vacancyResultSelector = jquery__WEBPACK_IMPORTED_MODULE_1___default()('#va
 
 const loadVacancies = () => {
     vacancyResultSelector.empty()
-    api.getVacancy(vacancyIdSelector.val(), vacancyAmountSelector.val()).then(data => {
-        data.items.map(item => {
-            if (item.salary)
-                vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name} зарплата: ${item.salary.from} ${item.salary.currency}</a></p>`)
-            else
-                vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name}</a></p>`)
-        });
-    })
+
+    api.getVacancy(vacancyIdSelector.val(), vacancyAmountSelector.val())
+        .then(response => {
+            response.items.map(item => {
+                if (item.salary)
+                    vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name} зарплата: ${item.salary.from} ${item.salary.currency}</a></p>`)
+                else
+                    vacancyResultSelector.append(`<p><a target="_blank" href="https://novosibirsk.hh.ru/vacancy/${item.id}">${item.name}</a></p>`)
+            });
+        })
+        .catch(() => {
+            vacancyResultSelector.append('<p>Ничего не найдено, введите корректные данные.</p>')
+        })
 }
 
 const instance = axios__WEBPACK_IMPORTED_MODULE_0___default().create({
@@ -27481,11 +27486,13 @@ var __webpack_exports__ = {};
   !*** ./js/main.js ***!
   \********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/index.css */ "./css/index.css");
-/* harmony import */ var _html_index_html__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../html/index.html */ "./html/index.html");
-/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./calculator */ "./js/calculator.js");
-/* harmony import */ var _parse__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./parse */ "./js/parse.js");
-/* harmony import */ var _swipper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./swipper */ "./js/swipper.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../css/index.css */ "./css/index.css");
+/* harmony import */ var _html_index_html__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../html/index.html */ "./html/index.html");
+/* harmony import */ var _swipper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./swipper */ "./js/swipper.js");
+/* harmony import */ var _calculator__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./calculator */ "./js/calculator.js");
+/* harmony import */ var _parse__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./parse */ "./js/parse.js");
 
 
 
@@ -27493,21 +27500,24 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-_parse__WEBPACK_IMPORTED_MODULE_3__.buttonLoadVacanciesSelector.click(function ()
+
+
+
+_parse__WEBPACK_IMPORTED_MODULE_5__.buttonLoadVacanciesSelector.click(function ()
 {
-    (0,_parse__WEBPACK_IMPORTED_MODULE_3__.loadVacancies)()
+    (0,_parse__WEBPACK_IMPORTED_MODULE_5__.loadVacancies)()
 })
 
-_calculator__WEBPACK_IMPORTED_MODULE_2__.buttonCalculateSelector.click(function () {
-    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_2__.calculate)()
+_calculator__WEBPACK_IMPORTED_MODULE_4__.buttonCalculateSelector.click(function () {
+    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_4__.calculate)()
 })
 
-_calculator__WEBPACK_IMPORTED_MODULE_2__.depositTypeSelector.change(function () {
-    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_2__.onChangeDepositTerm)()
+_calculator__WEBPACK_IMPORTED_MODULE_4__.depositTypeSelector.change(function () {
+    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_4__.onChangeDepositTerm)()
 })
 
-$(document).ready(function () {
-    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_2__.onChangeDepositTerm)()
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+    ;(0,_calculator__WEBPACK_IMPORTED_MODULE_4__.onChangeDepositTerm)()
 })
 })();
 

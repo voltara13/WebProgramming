@@ -1,9 +1,12 @@
+import $ from 'jquery';
+
 import css from "../css/index.css"
 import html from "../html/index.html"
 
+import Swiper from "./swipper";
+
 import { calculate, onChangeDepositTerm, buttonCalculateSelector, depositTypeSelector } from "./calculator";
 import { loadVacancies, buttonLoadVacanciesSelector } from "./parse"
-import Swiper from "./swipper";
 
 buttonLoadVacanciesSelector.click(function ()
 {
