@@ -16,33 +16,7 @@ function rotateCarousel() {
             carousel.style.transform = 'translateZ(' + radius + 'px)' + 'rotateY(' + angle + 'deg)';
         else
             carousel.style.transform = 'translateZ(' + -radius + 'px)' + 'rotateY(' + -angle + 'deg)';
-    } else {
-
     }
-
-    let cellIndex;
-    if (selectedIndex < 0) {
-        let tempIndex = selectedIndex * -1 % cellCount;
-
-        if (tempIndex === 0)
-            cellIndex = 0
-        else
-            cellIndex = cellCount - (selectedIndex * -1 % cellCount);
-    } else
-        cellIndex = selectedIndex % cellCount;
-
-    const cells = document.querySelectorAll('.carousel_cell');
-    cells.forEach((cell, index) => {
-        if (cellIndex === index) {
-            if (!cell.classList.contains('selected'))
-                cell.classList.add('selected');
-        }
-        else {
-            if (cell.classList.contains('selected')) {
-                cell.classList.remove('selected');
-            }
-        }
-    });
 }
 
 function selectPrev() {

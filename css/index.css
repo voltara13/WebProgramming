@@ -71,14 +71,14 @@ body {
     height: 50px;
     font-size: 2rem;
     margin: 5px;
-    border: 3px solid white;
+    border: 3px solid #ffffff;
     border-radius: 10px;
     background-color: #444444;
     color: #ffffff;
 }
 
 .previous-button:focus, .next-button:focus {
-    box-shadow: 0 0 6px 3px white;
+    box-shadow: 0 0 6px 3px #ffffff;
 }
 
 .carousel_list {
@@ -86,25 +86,20 @@ body {
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 0.7s, opacity 1s;
     list-style: none;
     counter-reset: list-counter;
 }
 
 .carousel_cell {
     position: absolute;
-    width: 550px;
-    height: 300px;
-    border: 2px solid white;
+    width: 90%;
+    height: 60%;
+    border: 2px solid #ffffff;
     border-radius: 10px;
     text-align: center;
     transition: transform 1s, opacity 1s;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.carousel_cell.selected {
-    border-color: white;
-    border-width: 5px;
 }
