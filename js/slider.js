@@ -11,10 +11,14 @@ let isInsideCarousel = false;
 
 function rotateCarousel() {
     const angle = theta * selectedIndex;
-    if (isInsideCarousel)
-        carousel.style.transform = 'translateZ(' + radius + 'px)' + 'rotateY(' + angle + 'deg)';
-    else
-        carousel.style.transform = 'translateZ(' + -radius + 'px)' + 'rotateY(' + -angle + 'deg)';
+    if (cellCount > 2) {
+        if (isInsideCarousel)
+            carousel.style.transform = 'translateZ(' + radius + 'px)' + 'rotateY(' + angle + 'deg)';
+        else
+            carousel.style.transform = 'translateZ(' + -radius + 'px)' + 'rotateY(' + -angle + 'deg)';
+    } else {
+
+    }
 
     let cellIndex;
     if (selectedIndex < 0) {
@@ -29,12 +33,12 @@ function rotateCarousel() {
 
     const cells = document.querySelectorAll('.carousel_cell');
     cells.forEach((cell, index) => {
-        if(cellIndex === index) {
-            if(!cell.classList.contains('selected'))
+        if (cellIndex === index) {
+            if (!cell.classList.contains('selected'))
                 cell.classList.add('selected');
         }
         else {
-            if(cell.classList.contains('selected')) {
+            if (cell.classList.contains('selected')) {
                 cell.classList.remove('selected');
             }
         }
@@ -61,15 +65,17 @@ function changeCarouselType(isChecked)
 function initCarousel() {
     selectedIndex = 0;
 
-    for(let i = 0; i < cells.length; i++) {
-        const cell = cells[i];
-        const cellAngle = theta * i;
+    if (cellCount > 2) {
+        for (let i = 0; i < cells.length; i++) {
+            const cell = cells[i];
+            const cellAngle = theta * i;
 
-        if (isInsideCarousel) {
-            cell.style.transform = 'rotateY(' + -cellAngle + 'deg)' + 'translateZ(' + -radius + 'px)';
-        }
-        else {
-            cell.style.transform = 'rotateY(' + cellAngle + 'deg)' + 'translateZ(' + radius + 'px)';
+            if (isInsideCarousel) {
+                cell.style.transform = 'rotateY(' + -cellAngle + 'deg)' + 'translateZ(' + -radius + 'px)';
+            }
+            else {
+                cell.style.transform = 'rotateY(' + cellAngle + 'deg)' + 'translateZ(' + radius + 'px)';
+            }
         }
     }
 
